@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Alunos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header><h1>Gestão Acadêmica</h1></header>
+    <main class="container">
+        <section id="formulario">
+            <form id="alunoForm">
+                <input type="hidden" id="alunoId">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="turma" placeholder="Turma" required>
+                <input type="text" id="ra" placeholder="RA" required>
+                <button type="submit" id="btnSalvar">Salvar</button>
+            </form>
+        </section>
+        <section id="lista">
+            <table>
+                <thead><tr><th>RA</th><th>Nome</th><th>Turma</th><th>Ações</th></tr></thead>
+                <tbody id="corpoTabela"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/api.js"></script>
+    <script src="js/listarAlunos.js"></script>
+    <script src="js/cadastrarAluno.js"></script>
+    <script src="js/editarAluno.js"></script>
+    <script src="js/deletarAluno.js"></script>
+</body>
+</html>
